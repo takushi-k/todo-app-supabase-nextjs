@@ -8,6 +8,8 @@ type Title = {
 }
 
 const Layout: FC<Title> = ({ children, title = 'Todo app' }) => {
+  console.log('Layout called')
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center font-mono text-gray-800">
       <Head>

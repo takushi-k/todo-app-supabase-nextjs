@@ -27,6 +27,7 @@ type StaticProps = {
 }
 
 const Ssg: NextPage<StaticProps> = ({ tasks, notices }) => {
+  console.log(tasks)
   const router = useRouter()
 
   return (

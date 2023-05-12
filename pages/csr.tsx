@@ -9,6 +9,7 @@ const Csr: NextPage = () => {
   const [notices, setNotices] = useState<Notice[]>([])
 
   useEffect(() => {
+    console.log('useEffect called')
     const getTasks = async () => {
       const { data: tasks } = await supabase
         .from('todos')
